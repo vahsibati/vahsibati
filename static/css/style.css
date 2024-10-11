@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../../fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+h1 {
+  font-weight: 600;
+  color: #6E1921;
+}
+
+
+h4 a {
+  font-weight: 600;
+  color: #6E1921;
+  text-decoration: none;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  overflow: hidden;
+  background-color: #6E1921;
+  background-image: url('../img/menu-pattern.svg');
+  background-repeat: repeat;
+  background-size: auto;
+  color: white;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .left-logo {
+  padding-top: 100px;
+}
+
+.content {
+  margin-left: 400px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat-Regular;
+  /* display: flex; */
+  /* height: 100vh; */
+}
+
+.sidebar .left-logo {
+  padding-top: 100px;
+}
+
+.sidebar .menu-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar .menu-items a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  margin-top: 35px;
+  background-color: gainsboro;
+  transform: translateX(-200%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar .menu-items a:hover::after {
+  transform: translateX(-100%);
+}
+
+.sidebar .menu-items a:hover:hover {
+  color: gainsboro;
+}
+
+.sidebar .footer {
+  background-color: #6E1921;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.right-content {
+  margin-left: 23%;
+  width: 77%;
+  overflow-y: scroll;
+}
